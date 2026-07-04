@@ -1,0 +1,13 @@
+{
+  "itemGroup.grack": "Example Mod Tab",
+  "block.grack.example_block": "Example Block",
+  "item.grack.example_item": "Example Item",
+
+  "grack.configuration.title": "Example Mod Configs",
+  "grack.configuration.section.grack.common.toml": "Example Mod Configs",
+  "grack.configuration.section.grack.common.toml.title": "Example Mod Configs",
+  "grack.configuration.items": "Item List",
+  "grack.configuration.logDirtBlock": "Log Dirt Block",
+  "grack.configuration.magicNumberIntroduction": "Magic Number Text",
+  "grack.configuration.magicNumber": "Magic Number"
+}
