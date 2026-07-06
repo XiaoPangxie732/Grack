@@ -1,0 +1,8 @@
+{
+  "commands.grack.geval.error.expression_compilation_failure": "Expression compilation failed with the following error:\n%s",
+  "commands.grack.geval.error.expression_runtime_failure": "Failed to evaluate the expression with the following error:\n%s",
+  "grack.configuration.exhibitionMode": "Exhibition Mode",
+  "grack.configuration.section.grack.common.toml": "Grack Configs",
+  "grack.configuration.section.grack.common.toml.title": "Grack Configs",
+  "grack.configuration.title": "Grack Configs"
+}

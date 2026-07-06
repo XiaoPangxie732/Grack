@@ -1,0 +1,8 @@
+{
+  "commands.grack.geval.error.expression_compilation_failure": "表达式编译错误，错误如下:\n%s",
+  "commands.grack.geval.error.expression_runtime_failure": "表达式求值失败，错误如下:\n%s",
+  "grack.configuration.exhibitionMode": "展会模式",
+  "grack.configuration.section.grack.common.toml": "Grack 配置",
+  "grack.configuration.section.grack.common.toml.title": "Grack 配置",
+  "grack.configuration.title": "Grack 配置"
+}
