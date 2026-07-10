@@ -28,7 +28,7 @@ import org.jspecify.annotations.NonNull;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-public class GroovyEvalCommands {
+public class GroovyEvalCommands {// FIXME: There could be RCE through click_event: run_command, check ClientPacketListener.sendUnattendedCommand
     public static final String NAME = "geval";
     public static final String KEY_EXPRESSION_COMPILATION_FAILURE = I18nKey.commands(NAME, "error.expression_compilation_failure");
     public static final String KEY_EXPRESSION_RUNTIME_FAILURE = I18nKey.commands(NAME, "error.expression_runtime_failure");

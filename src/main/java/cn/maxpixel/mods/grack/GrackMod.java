@@ -1,12 +1,12 @@
 package cn.maxpixel.mods.grack;
 
 import cn.maxpixel.mods.grack.util.I18nKey;
+import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
@@ -41,11 +41,13 @@ public class GrackMod {
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public GrackMod(IEventBus modEventBus, ModContainer modContainer) {
-        // Register ourselves for server and other game events we are interested in.
-        // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
-        // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
+        Registries.register(modEventBus);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+    }
+
+    public static Identifier rl(String path) {
+        return Identifier.fromNamespaceAndPath(MODID, path);
     }
 }

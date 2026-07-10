@@ -3,6 +3,7 @@ package cn.maxpixel.mods.grack.data.lang;
 import cn.maxpixel.mods.grack.Config;
 import cn.maxpixel.mods.grack.GrackMod;
 import cn.maxpixel.mods.grack.client.commands.GroovyEvalCommands;
+import cn.maxpixel.mods.grack.commands.arguments.GroovyScriptArgument;
 import cn.maxpixel.mods.grack.util.I18nKey;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.LanguageProvider;
@@ -21,5 +22,7 @@ public class AmericanEnglishLanguageProvider extends CustomLanguageProvider {
 
         add(GroovyEvalCommands.KEY_EXPRESSION_COMPILATION_FAILURE, "Expression compilation failed with the following error:\n%s");
         add(GroovyEvalCommands.KEY_EXPRESSION_RUNTIME_FAILURE, "Failed to evaluate the expression with the following error:\n%s");
+
+        add(GroovyScriptArgument.KEY_ERROR_UNKNOWN_SCRIPT, "Unknown script: %s");
     }
 }

@@ -11,6 +11,10 @@ public class I18nKey {
         return "commands." + GrackMod.MODID + '.' + cmd + '.' + key;
     }
 
+    public static String arguments(String arg, String key) {
+        return "arguments." + GrackMod.MODID + '.' + arg + '.' + key;
+    }
+
     public static String config(String key) {
         return GrackMod.MODID + ".configuration." + key;
     }

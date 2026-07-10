@@ -3,6 +3,7 @@ package cn.maxpixel.mods.grack.data.lang;
 import cn.maxpixel.mods.grack.Config;
 import cn.maxpixel.mods.grack.GrackMod;
 import cn.maxpixel.mods.grack.client.commands.GroovyEvalCommands;
+import cn.maxpixel.mods.grack.commands.arguments.GroovyScriptArgument;
 import cn.maxpixel.mods.grack.util.I18nKey;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.LanguageProvider;
@@ -21,5 +22,7 @@ public class SimplifiedChineseLanguageProvider extends CustomLanguageProvider {
 
         add(GroovyEvalCommands.KEY_EXPRESSION_COMPILATION_FAILURE, "表达式编译错误，错误如下:\n%s");
         add(GroovyEvalCommands.KEY_EXPRESSION_RUNTIME_FAILURE, "表达式求值失败，错误如下:\n%s");
+
+        add(GroovyScriptArgument.KEY_ERROR_UNKNOWN_SCRIPT, "未知的脚本名称: %s");
     }
 }
