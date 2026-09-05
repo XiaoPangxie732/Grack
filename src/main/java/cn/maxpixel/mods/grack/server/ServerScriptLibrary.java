@@ -47,6 +47,7 @@ public class ServerScriptLibrary implements PreparableReloadListener {
 
     @Override
     public @NonNull CompletableFuture<Void> reload(@NonNull SharedState currentReload, @NonNull Executor taskExecutor, @NonNull PreparationBarrier preparationBarrier, @NonNull Executor reloadExecutor) {
+        GrackMod.LOGGER.info("Reloading Groovy scripts");
         ResourceManager manager = currentReload.resourceManager();
         CompletableFuture<Object2ObjectOpenHashMap<Identifier, CompletableFuture<GrackScript>>> scripts = CompletableFuture.supplyAsync(
                 () -> LISTER.listMatchingResources(manager), taskExecutor
@@ -78,6 +79,7 @@ public class ServerScriptLibrary implements PreparableReloadListener {
                         return null;
                     }).join());
                     this.scripts = newScripts.build();
+                    GrackMod.LOGGER.info("Loaded {} Groovy scripts", this.scripts.size());
                 }, reloadExecutor);
     }
 }

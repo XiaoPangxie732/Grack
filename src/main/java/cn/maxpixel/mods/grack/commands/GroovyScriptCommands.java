@@ -1,5 +1,6 @@
 package cn.maxpixel.mods.grack.commands;
 
+import cn.maxpixel.mods.grack.GrackMod;
 import cn.maxpixel.mods.grack.GrackScript;
 import cn.maxpixel.mods.grack.client.commands.GroovyEvalCommands;
 import cn.maxpixel.mods.grack.commands.arguments.GroovyScriptArgument;

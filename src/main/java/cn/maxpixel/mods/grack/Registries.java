@@ -6,13 +6,18 @@ import cn.maxpixel.mods.grack.server.ServerScriptLibrary;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.attachment.AttachmentType;
 import net.neoforged.neoforge.event.AddServerReloadListenersEvent;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 @EventBusSubscriber(modid = GrackMod.MODID)
 public class Registries {
+
     public static void register(IEventBus modBus) {
         ArgumentRegistry.register(modBus);
+        DataAttachmentRegistry.ATTACHMENT_TYPES.register(modBus);
     }
 
     @SubscribeEvent
